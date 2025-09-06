@@ -41,4 +41,10 @@ public class ProductController {
         LOGGER.info("Returning final response");
         return ResponseEntity.ok(products);
     }
+
+    @GetMapping("/hello")
+    public String hello(){
+        return "Hello JBDL - "+Thread.currentThread().getName();
+    }
+
 }
