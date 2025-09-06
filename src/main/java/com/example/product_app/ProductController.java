@@ -44,6 +44,7 @@ public class ProductController {
 
     @GetMapping("/hello")
     public String hello(){
+        LOGGER.info("Processing /hello Req");
         return "Hello JBDL - "+Thread.currentThread().getName();
     }
 
